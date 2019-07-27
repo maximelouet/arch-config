@@ -5,3 +5,7 @@
 
 - name: populate pacman keyring with ArchLinux packagers
   command: pacman-key --populate archlinux
+
+- name: init GPG
+  command: gpg --list-keys
+  when: not ansible_check_mode
