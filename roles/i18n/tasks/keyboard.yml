@@ -1,0 +1,4 @@
+---
+
+- name: set default X11 keyboard configuration
+  command: localectl --no-convert set-x11-keymap "{{ keyboard_layout }}" "" "{{ keyboard_variant }}" "{{ keyboard_options }}"

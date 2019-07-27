@@ -1,7 +1,5 @@
 ---
 
-- name: set system locale
-  locale_gen:
-    name: "{{ item }}"
-    state: present
-  loop: "{{ system_locales }}"
+- import_tasks: locale.yml
+- import_tasks: timezone.yml
+- import_tasks: keyboard.yml

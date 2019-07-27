@@ -1,0 +1,6 @@
+---
+
+- name: set system timezone
+  timezone:
+    name: "{{ system_timezone }}"
+    hwclock: UTC
