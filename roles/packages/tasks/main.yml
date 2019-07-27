@@ -1,0 +1,11 @@
+---
+
+- name: upgrade all packages
+  command: yay -Syu --repo --noconfirm
+
+- name: install packages
+  yay:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ system_packages }}"
+  ignore_errors: yes

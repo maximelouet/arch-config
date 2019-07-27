@@ -1,0 +1,130 @@
+---
+
+system_packages:
+  - acpi
+  - acacaprout
+  - adobe-source-code-pro-fonts
+  - android-tools
+  - ansible
+  - apache-tools
+  - asciiquarium
+  - audacity
+  - autorandr
+  - aws-cli
+  - baobab
+  - blueman # bluetooth
+  - bluez # bluetooth
+  - breeze-hacked-cursor-theme
+  - caprine
+  - cava-git
+  - chromium
+  - clipster
+  - cmake
+  - code # visual studio code
+  - color-picker
+  - compton
+  - cryptsetup
+  - ctags
+  - cups # print
+  - deluge # torrent client
+  - dialog
+  - discord
+  - docker
+  - docker-compose
+  - eslint
+  - exa
+  - exfat-utils
+  - file-roller
+  - firefox
+  - fzf
+  - gcc
+  - git
+  - git-open-git # https://github.com/paulirish/git-open
+  - gnu-netcat
+  - gparted
+  - gpicview
+  - gsimplecal
+  - gtk3-mushrooms
+  - hsetroot
+  - htop
+  - httpie
+  - i3blocks
+  - i3-gaps
+  - intel-ucode
+  - jre-openjdk
+  - libinput-gestures
+  - libu2f-host
+  - light
+  - linux-lts
+  - linux-lts-headers
+  - lxrandr-gtk3
+  - maim
+  - make
+  - minecraft-launcher
+  - mosh
+  - mpc
+  - mpd
+  - ncdu
+  - ncmpcpp
+  - nemo
+  - nemo-fileroller
+  - networkmanager
+  - network-manager-applet
+  - networkmanager-openvpn
+  - nodejs
+  - noto-fonts
+  - noto-fonts-emoji
+  - openssh
+  - pacman-contrib
+  - pavucontrol
+  - playerctl-git
+  - pulseaudio
+  - pulseaudio-bluetooth
+  - python
+  - python-pip
+  - qrencode
+  - redshift
+  - rofi
+  - rsync
+  - rxvt-unicode
+  - slack-desktop
+  - spotify
+  - strace
+  - sublime-text
+  - subversion
+  - sudo
+  - systemd-boot-pacman-hook
+  - teams-for-linux # microsoft teams, EIP
+  - teensy-loader-cli # ergodox EZ
+  - thefuck
+  - the_silver_searcher # ag
+  - tree
+  - ttf-dejavu
+  - ttf-font-awesome-4
+  - twmn-git
+  - udiskie
+  - udisks2
+  - unrar
+  - unzip
+  - urxvt-resize-font-git
+  - vagrant
+  - vim
+  - virtualbox
+  - virtualbox-host-dkms
+  - vlc
+  - vmware-workstation
+  - wget
+  - whois
+  - wireless_tools
+  - xautolock
+  - xclip
+  - xf86-input-libinput
+  - xorg-server
+  - xorg-xev
+  - xorg-xinit
+  - xorg-xkill
+  - xorg-xprop
+  - xorg-xrandr
+  - yamllint
+  - yarn
+  - zsh
