@@ -1,0 +1,7 @@
+---
+
+pacman_options:
+  - CheckSpace
+  - Color
+  - ILoveCandy
+  - TotalDownload

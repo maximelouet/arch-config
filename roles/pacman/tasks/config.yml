@@ -1,0 +1,10 @@
+---
+
+- name: set misc pacman options
+  lineinfile:
+    path: /etc/pacman.conf
+    regexp: '^#?{{ item }}$'
+    line: "{{ item }}"
+    insertafter: '^# Misc options'
+    state: present
+  loop: "{{ pacman_options }}"
