@@ -1,0 +1,26 @@
+---
+
+- name: set system hostname
+  hostname:
+    name: "{{ system_hostname }}"
+
+- name: include localhost in /etc/hosts
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^127\.0\.0\.1[ \t]+localhost'
+    line: '127.0.0.1 localhost'
+    state: present
+
+- name: include localhost for ipv6 in /etc/hosts
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^::1[ \t]+localhost'
+    line: '::1       localhost'
+    state: present
+
+- name: include hostname in /etc/hosts
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^127\.0\.0\.1[ \t]+{{ system_hostname }}'
+    line: '127.0.0.1 {{ system_hostname }}.localdomain {{ system_hostname }}'
+    state: present
