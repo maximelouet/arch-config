@@ -1,0 +1,29 @@
+---
+
+- name: install required dependencies
+  pacman:
+    name: git
+    state: latest
+    update_cache: yes
+
+- name: clone yay repository
+  become_user: "{{ main_user }}"
+  git:
+    repo: https://aur.archlinux.org/yay.git
+    dest: /tmp/yay
+
+- name: build yay package
+  become_user: "{{ main_user }}"
+  command: makepkg -sf
+  args:
+    chdir: /tmp/yay/
+
+- name: get package file path
+  shell: ls -t /tmp/yay/ | head -1
+  register: package_path
+
+- name: install yay package
+  pacman:
+    name: "/tmp/yay/{{ package_path.stdout }}"
+    extra_args: "--noconfirm"
+  when: not ansible_check_mode

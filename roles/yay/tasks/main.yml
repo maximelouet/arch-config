@@ -1,0 +1,11 @@
+---
+
+- name: check yay installation state
+  shell: command -v yay
+  register: does_yay_exist
+  changed_when: false
+  failed_when: false
+  check_mode: no
+
+- include_tasks: install.yml
+  when: does_yay_exist.rc != 0
