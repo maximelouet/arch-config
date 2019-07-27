@@ -7,14 +7,12 @@
     create_home: yes
     groups: ["docker", "lp", "input"]
     append: yes
-    state: present
 
 - name: add main user to sudoers
   lineinfile:
     path: /etc/sudoers
     line: '{{ main_user }} ALL=(ALL) ALL'
     insertafter: '^root ALL=.*'
-    state: present
     validate: 'visudo -cf %s'
 
 - name: generate SSH key
@@ -23,7 +21,6 @@
     path: ~/.ssh/id_ed25519
     type: ed25519
     comment: "{{ main_user }}-{{ ansible_date_time.year }}-{{ ansible_date_time.month }}@{{ inventory_hostname }}"
-    state: present
 
 - name: init GPG
   become_user: "{{ main_user }}"

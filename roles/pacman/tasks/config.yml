@@ -6,5 +6,4 @@
     regexp: '^#?{{ item }}$'
     line: "{{ item }}"
     insertafter: '^# Misc options'
-    state: present
   loop: "{{ pacman_options }}"
