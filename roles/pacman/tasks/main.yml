@@ -3,4 +3,4 @@
 - import_tasks: config.yml
 - import_tasks: keyring.yml
 - import_tasks: upgrade.yml
-  tags: [ upgrade ]
+  tags: [ "upgrade" ]
