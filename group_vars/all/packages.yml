@@ -2,7 +2,6 @@
 
 system_packages:
   - acpi
-  - acacaprout
   - adobe-source-code-pro-fonts
   - android-tools
   - ansible
@@ -36,6 +35,7 @@ system_packages:
   - exfat-utils
   - file-roller
   - firefox
+  - funny-manpages
   - fzf
   - gcc
   - git
