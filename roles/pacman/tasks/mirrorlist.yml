@@ -1,0 +1,6 @@
+---
+
+- name: set pacman mirrorlist
+  template:
+    src: mirrorlist
+    dest: /etc/pacman.d/mirrorlist
