@@ -7,3 +7,4 @@
 - import_playbook: aur.yml
 - import_playbook: packages.yml
 - import_playbook: user.yml
+- import_playbook: wifi.yml
