@@ -1,0 +1,9 @@
+---
+
+- import_playbook: i18n.yml
+- import_playbook: hostname.yml
+- import_playbook: systemd.yml
+- import_playbook: pacman.yml
+- import_playbook: aur.yml
+- import_playbook: packages.yml
+- import_playbook: user.yml
