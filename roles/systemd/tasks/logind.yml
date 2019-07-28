@@ -1,0 +1,8 @@
+---
+
+- name: set systemd-logind sane values for laptop
+  lineinfile:
+    path: /etc/systemd/logind.conf
+    regexp: '^#?{{ item.name }}=.+'
+    line: "{{ item.name }}={{ item.value }}"
+  loop: "{{ systemd_logind_settings }}"

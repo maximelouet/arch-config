@@ -1,0 +1,15 @@
+---
+
+- name: start and enable systemd-resolved
+  systemd:
+    name: systemd-resolved
+    state: started
+    enabled: yes
+
+- name: configure systemd-resolved DNS
+  lineinfile:
+    path: /etc/systemd/resolved.conf
+    regexp: '^#?{{ item.name }}=.*'
+    line: "{{ item.name }}={{ item.value }}"
+  loop: "{{ systemd_resolved_settings }}"
+  notify: restart systemd-resolved

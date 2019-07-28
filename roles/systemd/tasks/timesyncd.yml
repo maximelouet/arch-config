@@ -1,0 +1,28 @@
+---
+
+- name: start and enable systemd-timesyncd
+  systemd:
+    name: systemd-timesyncd
+    state: started
+    enabled: yes
+
+- name: configure systemd-timesyncd
+  lineinfile:
+    path: /etc/systemd/timesyncd.conf
+    regexp: '^#?{{ item.name }}=.*'
+    line: "{{ item.name }}={{ item.value }}"
+  loop: "{{ systemd_timesyncd_settings }}"
+  notify: restart systemd-timesyncd
+
+- meta: flush_handlers
+
+- name: get ntp status
+  command: timedatectl timesync-status
+  register: ntp_status
+  changed_when: false
+  failed_when: false
+  check_mode: no
+
+- name: set global ntp to true
+  command: timedatectl set-ntp true
+  when: ntp_status.rc != 0

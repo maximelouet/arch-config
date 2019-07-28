@@ -1,0 +1,25 @@
+---
+
+systemd_logind_settings:
+  - name: HandlePowerKey
+    value: suspend
+  - name: HandleLidSwitch
+    value: ignore
+  - name: HandleLidSwitchExternalPower
+    value: ignore
+  - name: HandleLidSwitchDocked
+    value: ignore
+
+systemd_resolved_settings:
+  - name: DNS
+    value: 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
+  - name: DNSSEC
+    value: 'true'
+  - name: DNSOverTLS
+    value: opportunistic
+
+systemd_timesyncd_settings:
+  - name: NTP
+    value: 0.arch.pool.ntp.org 1.arch.pool.ntp.org 2.arch.pool.ntp.org 3.arch.pool.ntp.org
+  - name: FallbackNTP
+    value: 0.pool.ntp.org 1.pool.ntp.org 0.fr.pool.ntp.org
