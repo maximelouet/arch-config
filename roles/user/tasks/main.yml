@@ -18,8 +18,8 @@
 - name: generate SSH key
   become_user: "{{ main_user }}"
   openssh_keypair:
-    path: ~/.ssh/id_ed25519
-    type: ed25519
+    path: ~/.ssh/id_{{ main_user_key_type }}
+    type: "{{ main_user_key_type }}"
     comment: "{{ main_user }}-{{ ansible_date_time.year }}-{{ ansible_date_time.month }}@{{ inventory_hostname }}"
 
 - name: init GPG

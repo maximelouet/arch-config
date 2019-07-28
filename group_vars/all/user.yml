@@ -1,3 +1,5 @@
 ---
 
 main_user: saumon
+
+main_user_key_type: ed25519
