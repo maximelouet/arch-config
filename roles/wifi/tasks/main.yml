@@ -3,7 +3,7 @@
 - name: template WPA2/PSK wifi networks
   template:
     src: wpa.nmconnection
-    dest: /etc/NetworkManager/system-connections/{{ item.SSID }}.nmconnection
+    dest: /etc/NetworkManager/system-connections/{{ item.name }}.nmconnection
     mode: '600'
   loop: "{{ wifi_networks_wpa }}"
   notify: restart NetworkManager
@@ -11,7 +11,7 @@
 - name: template EAP/enterprise wifi networks
   template:
     src: eap.nmconnection
-    dest: /etc/NetworkManager/system-connections/{{ item.SSID }}.nmconnection
+    dest: /etc/NetworkManager/system-connections/{{ item.name }}.nmconnection
     mode: '600'
   loop: "{{ wifi_networks_eap }}"
   notify: restart NetworkManager

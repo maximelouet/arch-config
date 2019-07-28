@@ -1,25 +1,35 @@
-{# NetworkManager WPA2/PSK network connection template #}
-{# These files are present in /etc/NetworkManager/system-connections/ #}
 #
-# Saumon EAP network connection template
-# This file was generated with Ansible
+# Saumon EAP network connection for "{{ item.name }}"
+# This file was generated with Ansible.
+{% if item.comment is defined %}
+# Comment: "{{ item.comment }}"
+{% else %}
+# Comment: (none)
+{% endif %}
 #
 [connection]
-id={{ item.SSID }}
-uuid={{ item.SSID | to_uuid }}
+id={{ item.name }}
+uuid={{ item.name | to_uuid }}
 type=wifi
-permissions=user:{{ main_user }}:;
+permissions=
 
 [wifi]
 mac-address-blacklist=
 mode=infrastructure
-ssid={{ item.SSID }}
+{% if item.ssid is defined %}
+ssid={{ item.ssid }}
+{% else %}
+ssid={{ item.name }}
+{% endif %}
 
 [wifi-security]
 auth-alg=open
 key-mgmt=wpa-eap
 
 [802-1x]
+{% if item.domain_suffix_match is defined %}
+domain-suffix-match={{ item.domain_suffix_match }}
+{% endif %}
 eap=peap;
 identity={{ item.identity }}
 password={{ item.password }}
