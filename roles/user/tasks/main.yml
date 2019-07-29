@@ -30,6 +30,6 @@
 - name: create home directories
   become_user: "{{ main_user }}"
   file:
-    path: /home/{{ main_user }}/{{ item }}
+    path: ~/{{ item }}
     state: directory
   loop: "{{ user_directories }}"
