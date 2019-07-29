@@ -11,6 +11,9 @@
 id={{ item.name }}
 uuid={{ item.name | to_uuid }}
 type=wifi
+{% if item.priority is defined %}
+autoconnect-priority={{ item.priority }}
+{% endif %}
 permissions=
 
 [wifi]
@@ -23,7 +26,6 @@ ssid={{ item.name }}
 {% endif %}
 
 [wifi-security]
-auth-alg=open
 key-mgmt=wpa-psk
 psk={{ item.psk }}
 
