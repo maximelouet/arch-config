@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+
+  roles:
+    - i18n
+    - hostname
+    - systemd
+    - pacman
+
+- hosts: all
+  tasks:
+    - name: copy this repository to /var/tmp/arch-config/
+      shell: "rm -rf /var/tmp/arch-config && cp -r .. /var/tmp/arch-config"
+      args:
+        warn: no # using shell module instead of copy because copy is VERY slow
