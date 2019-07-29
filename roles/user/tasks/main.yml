@@ -26,3 +26,10 @@
   become_user: "{{ main_user }}"
   command: gpg --list-keys
   when: not ansible_check_mode
+
+- name: create home directories
+  become_user: "{{ main_user }}"
+  file:
+    path: /home/{{ main_user }}/{{ item }}
+    state: directory
+  loop: "{{ user_directories }}"

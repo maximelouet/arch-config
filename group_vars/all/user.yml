@@ -3,3 +3,16 @@
 main_user: saumon
 
 main_user_key_type: ed25519
+
+user_directories:
+  - backup
+  - downloads
+  - games
+  - images
+  - music
+  - scripts
+  - software
+  - tek
+  - tmp
+  - web
+  - work
