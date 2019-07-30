@@ -10,7 +10,10 @@ system_packages:
   - audacity
   - autorandr
   - aws-cli
+  - aws-cli
   - baobab
+  - bash
+  - bash-completion
   - blueman # bluetooth
   - bluez # bluetooth
   - breeze-hacked-cursor-theme
@@ -95,6 +98,7 @@ system_packages:
   - systemd-boot-pacman-hook
   - teams-for-linux # microsoft teams, EIP
   - teensy-loader-cli # ergodox EZ
+  - terraform
   - thefuck
   - the_silver_searcher # ag
   - tree
@@ -126,4 +130,6 @@ system_packages:
   - xorg-xrandr
   - yamllint
   - yarn
+  - zip
   - zsh
+  - zsh-completions # yes there is a "s" unlike bash-completion :)
