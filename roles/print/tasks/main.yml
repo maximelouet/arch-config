@@ -1,0 +1,19 @@
+---
+
+- name: install required packages
+  yay:
+    name: "{{ item }}"
+  loop: "{{ print_packages }}"
+
+- name: add user to lp group
+  user:
+    name: "{{ main_user }}"
+    groups: ["lp"]
+    append: yes
+
+- name: start and enable cups service
+  systemd:
+    daemon_reload: yes
+    name: org.cups.cupsd.service
+    state: started
+    enabled: yes

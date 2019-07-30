@@ -24,7 +24,6 @@ system_packages:
   - compton
   - cryptsetup
   - ctags
-  - cups # print
   - deluge # torrent client
   - dialog
   - discord

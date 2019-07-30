@@ -1,0 +1,10 @@
+---
+
+print_packages:
+  - cups
+  - cups-pdf
+  - ghostscript
+  - gsfonts
+  - gtk3-print-backends
+  - gutenprint
+  - hplip

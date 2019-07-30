@@ -5,7 +5,7 @@
     name: "{{ main_user }}"
     shell: /bin/zsh
     create_home: yes
-    groups: ["docker", "lp", "input"]
+    groups: ["input"]
     append: yes
 
 - name: add main user to sudoers
