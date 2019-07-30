@@ -33,3 +33,5 @@
     path: ~/{{ item }}
     state: directory
   loop: "{{ user_directories }}"
+
+- import_tasks: dotfiles.yml

@@ -1,0 +1,14 @@
+---
+
+- name: clone dotfiles repo
+  become_user: "{{ main_user }}"
+  git:
+    repo: "{{ user_dotfiles_repo }}"
+    dest: "{{ user_dotfiles_directory }}"
+    accept_hostkey: yes
+
+- name: install dotfiles with dotbot
+  become_user: "{{ main_user }}"
+  command: "./install"
+  args:
+    chdir: "{{ user_dotfiles_directory }}"

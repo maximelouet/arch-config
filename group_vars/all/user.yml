@@ -16,3 +16,7 @@ user_directories:
   - tmp
   - web
   - work
+
+user_dotfiles_repo: git@github.com:maximelouet/dotfiles.git
+
+user_dotfiles_directory: ~/.dotfiles
