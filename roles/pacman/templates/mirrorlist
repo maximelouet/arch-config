@@ -3,5 +3,5 @@
 ##
 
 {% for server in pacman_mirrorlist_servers %}
-Server = {{ server }}
+Server = {{ server }}/$repo/os/$arch
 {% endfor %}

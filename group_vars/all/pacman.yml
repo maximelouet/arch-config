@@ -7,6 +7,6 @@ pacman_options:
   - TotalDownload
 
 pacman_mirrorlist_servers:
-  - https://archlinux.mailtunnel.eu/
-  - https://mirror.cyberbits.eu/archlinux/
-  - http://mirrors.celianvdb.fr/archlinux/
+  - https://archlinux.mailtunnel.eu
+  - https://mirror.cyberbits.eu/archlinux
+  - http://mirrors.celianvdb.fr/archlinux
