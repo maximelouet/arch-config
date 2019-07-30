@@ -14,6 +14,7 @@ system_packages:
   - baobab
   - bash
   - bash-completion
+  - bind-tools
   - blueman # bluetooth
   - bluez # bluetooth
   - breeze-hacked-cursor-theme
@@ -66,13 +67,17 @@ system_packages:
   - mosh
   - mpc
   - mpd
+  - mtr
   - ncdu
   - ncmpcpp
   - nemo
   - nemo-fileroller
+  - netcat
+  - net-tools
   - networkmanager
   - network-manager-applet
   - networkmanager-openvpn
+  - nmap
   - nodejs
   - noto-fonts
   - noto-fonts-emoji
@@ -96,6 +101,7 @@ system_packages:
   - subversion
   - sudo
   - systemd-boot-pacman-hook
+  - tcpdump
   - teams-for-linux # microsoft teams, EIP
   - teensy-loader-cli # ergodox EZ
   - terraform
