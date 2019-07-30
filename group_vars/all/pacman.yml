@@ -6,7 +6,5 @@ pacman_options:
   - ILoveCandy
   - TotalDownload
 
-pacman_mirrorlist_servers:
-  - https://archlinux.mailtunnel.eu
-  - https://mirror.cyberbits.eu/archlinux
-  - http://mirrors.celianvdb.fr/archlinux
+pacman_mirrors_country: "France"
+pacman_mirrors_count: 4

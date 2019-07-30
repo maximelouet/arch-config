@@ -1,5 +1,10 @@
 ---
 
+- name: create pacman hooks directory
+  file:
+    path: /etc/pacman.d/hooks
+    state: directory
+
 - import_tasks: config.yml
 - import_tasks: mirrorlist.yml
 - import_tasks: keyring.yml

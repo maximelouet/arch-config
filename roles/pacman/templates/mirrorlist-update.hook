@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = pacman-mirrorlist
+
+[Action]
+Description = Updating pacman mirrorlist ({{ pacman_mirrors_country }}) with reflector...
+When = PostTransaction
+Depends = reflector
+Exec = /bin/sh -c "reflector --country '{{ pacman_mirrors_country }}' --age 12 --protocol https --fastest {{ pacman_mirrors_count }} --sort score --save /etc/pacman.d/mirrorlist; rm -f /etc/pacman.d/mirrorlist.pacnew"

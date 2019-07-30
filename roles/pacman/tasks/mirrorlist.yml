@@ -1,6 +1,11 @@
 ---
 
-- name: set pacman mirrorlist
+- name: install reflector
+  yay:
+    name: reflector
+    state: latest
+
+- name: setup pacman hook to update mirrors on pacman-mirrorlist upgrade
   template:
-    src: mirrorlist
-    dest: /etc/pacman.d/mirrorlist
+    src: mirrorlist-update.hook
+    dest: /etc/pacman.d/hooks/mirrorlist-update.hook

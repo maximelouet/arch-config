@@ -1,7 +1,0 @@
-##
-## Saumon Arch Linux repository mirrorlist
-##
-
-{% for server in pacman_mirrorlist_servers %}
-Server = {{ server }}/$repo/os/$arch
-{% endfor %}
