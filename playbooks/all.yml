@@ -8,3 +8,6 @@
 - import_playbook: packages.yml
 - import_playbook: user.yml
 - import_playbook: wifi.yml
+- import_playbook: firewall.yml
+- import_playbook: macchiato.yml
+- import_playbook: print.yml
