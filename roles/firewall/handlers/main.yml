@@ -1,0 +1,4 @@
+---
+
+- name: apply nftables config
+  command: "nft -f /etc/nftables.conf"
