@@ -84,6 +84,8 @@ system_packages:
   - openssh
   - pacman-contrib
   - pavucontrol
+  - pdfgrep
+  - physlock
   - playerctl-git
   - pulseaudio
   - pulseaudio-bluetooth
