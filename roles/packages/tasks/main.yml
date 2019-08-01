@@ -1,11 +1,12 @@
 ---
 
-- name: upgrade all packages
-  command: yay -Syu --repo --noconfirm
+- name: update pacman cache
+  pacman:
+    update_cache: yes
 
 - name: install packages
   yay:
     name: "{{ item }}"
-    state: latest
+    state: present
   loop: "{{ system_packages }}"
   ignore_errors: yes

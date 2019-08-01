@@ -3,7 +3,7 @@
 - name: install nftables
   yay:
     name: nftables
-    state: latest
+    state: present
 
 - name: copy nftables configuration
   copy:

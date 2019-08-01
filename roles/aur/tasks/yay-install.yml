@@ -3,7 +3,7 @@
 - name: install required dependencies
   pacman:
     name: git
-    state: latest
+    state: present
     update_cache: yes
 
 - name: clone yay repository

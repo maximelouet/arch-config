@@ -3,7 +3,7 @@
 - name: install macchiato
   yay:
     name: macchiato-git
-    state: latest
+    state: present
 
 - name: create macchiato config directory
   file:
