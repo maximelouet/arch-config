@@ -80,6 +80,7 @@ system_packages:
   - nmap
   - nodejs
   - noto-fonts
+  - noto-fonts-cjk
   - noto-fonts-emoji
   - openssh
   - pacman-contrib
