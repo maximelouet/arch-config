@@ -10,7 +10,6 @@ system_packages:
   - audacity
   - autorandr
   - aws-cli
-  - aws-cli
   - baobab
   - bash
   - bash-completion
@@ -76,6 +75,7 @@ system_packages:
   - net-tools
   - networkmanager
   - network-manager-applet
+  - networkmanager-fortisslvpn-git # Kent VPN
   - networkmanager-openvpn
   - nmap
   - nodejs
