@@ -111,6 +111,7 @@ system_packages:
   - thefuck
   - the_silver_searcher # ag
   - tree
+  - trickle
   - ttf-dejavu
   - ttf-font-awesome-4
   - twmn-git
