@@ -53,6 +53,7 @@ system_packages:
   - i3blocks
   - i3-gaps
   - intel-ucode
+  - jq
   - jre-openjdk
   - libinput-gestures
   - libu2f-host
