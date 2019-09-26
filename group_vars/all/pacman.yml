@@ -6,5 +6,5 @@ pacman_options:
   - ILoveCandy
   - TotalDownload
 
-pacman_mirrors_country: "France"
+pacman_mirrors_country: "United Kingdom"
 pacman_mirrors_count: 4
