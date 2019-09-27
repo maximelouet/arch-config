@@ -109,6 +109,12 @@ system_packages:
   - teams-for-linux # microsoft teams, EIP
   - teensy-loader-cli # ergodox EZ
   - terraform
+#  - texlive-core
+#  - texlive-fontsextra
+#  - texlive-formatsextra
+#  - texlive-latexextra
+#  - texlive-pictures
+#  - texlive-science
   - thefuck
   - the_silver_searcher # ag
   - tree
