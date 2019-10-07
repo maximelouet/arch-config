@@ -11,6 +11,7 @@ system_packages:
   - autorandr
   - aws-cli
   - baobab
+  - base
   - bash
   - bash-completion
   - bind-tools
