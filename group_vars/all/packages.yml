@@ -47,7 +47,7 @@ system_packages:
   - gparted
   - gpicview
   - gsimplecal
-  - gtk3-mushrooms
+  - gtk3
   - hsetroot
   - htop
   - httpie
