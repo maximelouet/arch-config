@@ -15,6 +15,7 @@ system_packages:
   - bash
   - bash-completion
   - bind-tools
+  - binwalk
   - blueman # bluetooth
   - bluez # system bluetooth implementation
   - breeze-hacked-cursor-theme
