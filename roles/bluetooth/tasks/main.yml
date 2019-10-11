@@ -1,0 +1,22 @@
+---
+
+- name: install necessary bluetooth packages
+  yay:
+    update_cache: yes
+    name: "{{ item }}"
+    state: present
+  loop:
+    - blueman
+    - bluez
+
+- name: enable bluetooth driver at boot
+  lineinfile:
+    path: /etc/bluetooth/main.conf
+    line: 'AutoEnable=true'
+    regexp: '#?^AutoEnable ?= ?.*$'
+    state: present
+
+- name: enable bluetooth service at boot
+  systemd:
+    name: bluetooth.service
+    enabled: yes

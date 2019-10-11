@@ -11,3 +11,4 @@
 - import_playbook: firewall.yml
 - import_playbook: macchiato.yml
 - import_playbook: print.yml
+- import_playbook: bluetooth.yml

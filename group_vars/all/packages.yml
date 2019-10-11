@@ -16,7 +16,7 @@ system_packages:
   - bash-completion
   - bind-tools
   - blueman # bluetooth
-  - bluez # bluetooth
+  - bluez # system bluetooth implementation
   - breeze-hacked-cursor-theme
   - caprine
   - cava-git
