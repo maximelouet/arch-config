@@ -1,6 +1,7 @@
 ---
 
 - name: install necessary bluetooth packages
+  become_user: "{{ main_user }}"
   yay:
     update_cache: yes
     name: "{{ item }}"

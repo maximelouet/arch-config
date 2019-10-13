@@ -1,0 +1,11 @@
+---
+
+- name: install font packages
+  become_user: "{{ main_user }}"
+  yay:
+    update_cache: yes
+    name: "{{ item }}"
+    state: present
+  loop: "{{ font_packages }}"
+
+- import_tasks: windows-fonts.yml

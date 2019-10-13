@@ -1,6 +1,7 @@
 ---
 
 - name: install required packages
+  become_user: "{{ main_user }}"
   yay:
     name: "{{ item }}"
   loop: "{{ print_packages }}"

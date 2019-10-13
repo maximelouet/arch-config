@@ -80,9 +80,6 @@ system_packages:
   - networkmanager-openvpn
   - nmap
   - nodejs
-  - noto-fonts
-  - noto-fonts-cjk
-  - noto-fonts-emoji
   - openssh
   - pacman-contrib
   - pavucontrol
@@ -119,8 +116,6 @@ system_packages:
   - the_silver_searcher # ag
   - tree
   - trickle
-  - ttf-dejavu
-  - ttf-font-awesome-4
   - twmn-git
   - udiskie
   - udisks2
@@ -154,3 +149,10 @@ system_packages:
 bluetooth_packages:
   - blueman # bluetooth GUI applet
   - bluez # system bluetooth implementation
+
+font_packages:
+  - noto-fonts
+  - noto-fonts-cjk
+  - noto-fonts-emoji
+  - ttf-dejavu
+  - ttf-font-awesome-4 # i3bar icons
