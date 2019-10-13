@@ -1,6 +1,6 @@
 # arch-config
 
-My personal ArchLinux configuration, managed with Ansible.
+My personal Arch Linux configuration, managed with Ansible.
 
 This repository does *not* include my dotfiles ; they're on [their own
 repo](https://github.com/maximelouet/dotfiles).

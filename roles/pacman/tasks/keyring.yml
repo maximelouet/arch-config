@@ -3,7 +3,7 @@
 - name: init pacman keyring
   command: pacman-key --init
 
-- name: populate pacman keyring with ArchLinux packagers
+- name: populate pacman keyring with Arch Linux packagers
   command: pacman-key --populate archlinux
 
 - name: init GPG
