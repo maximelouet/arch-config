@@ -1,32 +1,22 @@
 ---
 
-- name: clone ttf-ms-win10-arch repo
-  git:
-    repo: "{{ fonts_windows_repo }}"
-    dest: "{{ fonts_windows_dir }}"
-    depth: 1 # we do not need git history
+- name: "download {{ fonts_windows_pkg_name }} package"
+  get_url:
+    url: "{{ fonts_windows_pkg_url }}"
+    dest: "{{ fonts_windows_tmp_file }}"
 
-- name: get main file name
-  shell: 'find {{ fonts_windows_dir }} -type f -iname "ttf-ms-win10-10*-any.pkg.tar.xz"'
-  changed_when: false
-  register: filename
-
-- debug:
-    var: filename.stdout
-  when: not ansible_check_mode
-
-- name: remove old ttf-ms-win10 package
+- name: "remove old {{ fonts_windows_pkg_name }} package"
   pacman:
-    name: ttf-ms-win10
+    name: "{{ fonts_windows_pkg_name }}"
     state: absent
 
-- name: install ttf-ms-win10 package
+- name: "install {{ fonts_windows_pkg_name }} package"
   pacman:
-    name: "{{ filename.stdout }}"
+    name: "{{ fonts_windows_tmp_file }}"
     state: installed
   when: not ansible_check_mode
 
-- name: clean up directory
+- name: clean up file
   file:
-    path: "{{ fonts_windows_dir }}"
+    path: "{{ fonts_windows_tmp_file }}"
     state: absent
