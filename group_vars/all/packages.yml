@@ -16,8 +16,6 @@ system_packages:
   - bash-completion
   - bind-tools
   - binwalk
-  - blueman # bluetooth
-  - bluez # system bluetooth implementation
   - breeze-hacked-cursor-theme
   - caprine
   - cava-git
@@ -152,3 +150,7 @@ system_packages:
   - zip
   - zsh
   - zsh-completions # yes there is a "s" unlike bash-completion :)
+
+bluetooth_packages:
+  - blueman # bluetooth GUI applet
+  - bluez # system bluetooth implementation

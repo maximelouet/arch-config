@@ -5,9 +5,7 @@
     update_cache: yes
     name: "{{ item }}"
     state: present
-  loop:
-    - blueman
-    - bluez
+  loop: "{{ bluetooth_packages }}"
 
 - name: enable bluetooth driver at boot
   lineinfile:
