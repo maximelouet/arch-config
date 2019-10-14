@@ -2,10 +2,11 @@
 
 system_packages:
   - acpi
+  - acpid # acpi events handler.sh (jack, lid toggle...)
   - adobe-source-code-pro-fonts
   - android-tools
   - ansible
-  - apache-tools
+  - apache-tools # htpasswd
   - asciiquarium
   - audacity
   - autorandr
@@ -14,11 +15,14 @@ system_packages:
   - base
   - bash
   - bash-completion
+  - bc
   - bind-tools
   - binwalk
+  - blih # epitech
   - breeze-hacked-cursor-theme
   - caprine
   - cava-git
+  - checkbashisms
   - chromium
   - clipster
   - cmake
@@ -27,6 +31,7 @@ system_packages:
   - compton
   - cryptsetup
   - ctags
+  - curl
   - deluge # torrent client
   - dialog
   - discord
@@ -35,7 +40,7 @@ system_packages:
   - eslint
   - exa
   - exfat-utils
-  - file-roller
+  - file-roller # archive manager
   - firefox
   - funny-manpages
   - fzf
@@ -43,20 +48,22 @@ system_packages:
   - git
   - git-open-git # https://github.com/paulirish/git-open
   - gnu-netcat
+  - gnupg
   - gparted
   - gpicview
   - gsimplecal
   - gtk3
-  - hsetroot
+  - hsetroot # xsetroot but works
   - htop
   - httpie
   - i3blocks
   - i3-gaps
-  - intel-ucode
-  - jq
+  - intel-ucode # intel processors microcode updates
+  - jdk-openjdk
+  - jq # CLI JSON parser
   - jre-openjdk
   - libinput-gestures
-  - libu2f-host
+  - libu2f-host # U2F security key communication
   - light
   - linux-lts
   - linux-lts-headers
@@ -64,6 +71,7 @@ system_packages:
   - maim
   - make
   - minecraft-launcher
+  - mlocate
   - mosh
   - mpc
   - mpd
@@ -72,6 +80,7 @@ system_packages:
   - ncmpcpp
   - nemo
   - nemo-fileroller
+  - neofetch # hipster swag
   - netcat
   - net-tools
   - networkmanager
@@ -81,10 +90,10 @@ system_packages:
   - nmap
   - nodejs
   - openssh
-  - pacman-contrib
+  - pacman-contrib # checkupdates and paccache
   - pavucontrol
   - pdfgrep
-  - physlock
+  - physlock # secure TTY locker
   - playerctl-git
   - pulseaudio
   - pulseaudio-bluetooth
@@ -99,23 +108,17 @@ system_packages:
   - spotify
   - strace
   - sublime-text
-  - subversion
+  - subversion # epitech eip
   - sudo
   - systemd-boot-pacman-hook
   - tcpdump
   - teams-for-linux # microsoft teams, EIP
   - teensy-loader-cli # ergodox EZ
   - terraform
-#  - texlive-core
-#  - texlive-fontsextra
-#  - texlive-formatsextra
-#  - texlive-latexextra
-#  - texlive-pictures
-#  - texlive-science
   - thefuck
   - the_silver_searcher # ag
   - tree
-  - trickle
+  - trickle # userspace bandwidth limiter
   - twmn-git
   - udiskie
   - udisks2
@@ -135,11 +138,13 @@ system_packages:
   - xclip
   - xf86-input-libinput
   - xorg-server
+  - xorg-setxkbmap
   - xorg-xev
   - xorg-xinit
   - xorg-xkill
   - xorg-xprop
   - xorg-xrandr
+  - xorg-xrdb
   - yamllint
   - yarn
   - zip
