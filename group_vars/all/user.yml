@@ -7,13 +7,19 @@ main_user_key_type: ed25519
 user_directories:
   - backup
   - downloads
+  - external
+  - ezra
   - games
+  - git
+  - grepimmo
   - images
+  - kent
   - music
   - scripts
   - software
   - tek
   - tmp
+  - videos
   - web
   - work
 
