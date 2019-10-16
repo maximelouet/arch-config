@@ -10,6 +10,7 @@
 - import_playbook: fonts.yml
 - import_playbook: wifi.yml
 - import_playbook: firewall.yml
+- import_playbook: bluetooth.yml
+- import_playbook: pulseaudio.yml
 - import_playbook: macchiato.yml
 - import_playbook: print.yml
-- import_playbook: bluetooth.yml
