@@ -99,6 +99,7 @@ system_packages:
   - pulseaudio-bluetooth
   - python
   - python-pip
+  - qalculate-gtk # graphical calculator
   - qrencode
   - redshift
   - rofi
