@@ -53,6 +53,7 @@ system_packages:
   - gpicview
   - gsimplecal
   - gtk3
+  - gvfs-smb # mount samba shares
   - hsetroot # xsetroot but works
   - htop
   - httpie
