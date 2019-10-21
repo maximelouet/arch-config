@@ -5,16 +5,19 @@
   yay:
     name: "{{ item }}"
   loop: "{{ print_packages }}"
+  when: print
 
 - name: add user to lp group
   user:
     name: "{{ main_user }}"
     groups: ["lp"]
     append: yes
+  when: print
 
-- name: enable cups service at boot
+- name: set cups service auto start state
   systemd:
     daemon_reload: yes
     name: org.cups.cupsd.service
     state: stopped
     enabled: "{{ print_cups_enabled }}"
+  when: print

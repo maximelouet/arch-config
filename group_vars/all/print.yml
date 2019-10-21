@@ -1,3 +1,5 @@
 ---
 
+print: yes
+
 print_cups_enabled: no
