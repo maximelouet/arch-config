@@ -12,9 +12,9 @@
     groups: ["lp"]
     append: yes
 
-- name: start and enable cups service
+- name: enable cups service at boot
   systemd:
     daemon_reload: yes
     name: org.cups.cupsd.service
-    state: started
-    enabled: yes
+    state: stopped
+    enabled: "{{ print_cups_enabled }}"
