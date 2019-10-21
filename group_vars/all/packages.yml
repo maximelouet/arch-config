@@ -112,7 +112,6 @@ system_packages:
   - sublime-text
   - subversion # epitech eip
   - sudo
-  - systemd-boot-pacman-hook
   - tcpdump
   - teams-for-linux # microsoft teams, EIP
   - teensy-loader-cli # ergodox EZ
@@ -163,3 +162,6 @@ font_packages:
   - noto-fonts-emoji
   - ttf-dejavu
   - ttf-font-awesome-4 # i3bar icons
+
+boot_packages:
+  - systemd-boot-pacman-hook

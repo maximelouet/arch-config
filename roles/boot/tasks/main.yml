@@ -1,0 +1,37 @@
+---
+
+- name: install necessary boot packages
+  become_user: "{{ main_user }}"
+  yay:
+    update_cache: yes
+    name: "{{ item }}"
+    state: present
+  loop: "{{ boot_packages }}"
+  notify: install bootloader
+
+- name: ensure grub is not installed
+  become_user: "{{ main_user }}"
+  yay:
+    name: grub
+    state: absent
+
+- name: create systemd-boot directories
+  file:
+    path: "{{ boot_efi_path }}/loader/entries"
+    state: directory
+  notify: install bootloader
+
+- name: copy bootloader entries
+  template:
+    src: entry.conf
+    dest: "{{ boot_efi_path }}/loader/entries/{{ entry.name | lower | replace(' ','-') }}.conf"
+  loop: "{{ boot_loader_entries }}"
+  loop_control:
+    loop_var: entry
+  notify: update bootloader entries
+
+- name: copy main bootloader config
+  template:
+    src: loader.conf
+    dest: "{{ boot_efi_path }}/loader/loader.conf"
+  notify: update bootloader entries

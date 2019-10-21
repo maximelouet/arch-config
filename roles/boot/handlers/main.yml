@@ -1,0 +1,19 @@
+---
+
+- name: install bootloader
+  shell: "bootctl --path={{ boot_efi_path }} install"
+  register: bootctl_install
+
+- debug:
+    var: bootctl_install.stderr_lines
+  when: not ansible_check_mode
+  listen: install bootloader
+
+- name: update bootloader entries
+  shell: "bootctl --path={{ boot_efi_path }} update"
+  register: bootctl_update
+
+- debug:
+    var: bootctl_update.stderr_lines
+  when: not ansible_check_mode
+  listen: update bootloader entries
