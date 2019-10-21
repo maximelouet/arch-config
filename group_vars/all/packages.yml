@@ -152,6 +152,15 @@ system_packages:
   - zsh
   - zsh-completions # yes there is a "s" unlike bash-completion :)
 
+print_packages:
+  - cups
+  - cups-pdf
+  - ghostscript
+  - gsfonts
+  - gtk3-print-backends
+  - gutenprint
+  - hplip
+
 bluetooth_packages:
   - blueman # bluetooth GUI applet
   - bluez # system bluetooth implementation
