@@ -7,6 +7,7 @@ system_packages:
   - android-tools
   - ansible
   - apache-tools # htpasswd
+  - arc-gtk-theme
   - asciiquarium
   - audacity
   - autorandr
