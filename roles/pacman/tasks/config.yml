@@ -7,3 +7,9 @@
     line: "{{ item }}"
     insertafter: '^# Misc options'
   loop: "{{ pacman_options }}"
+
+- name: set pacman packages for which to ignore upgrades
+  lineinfile:
+    path: /etc/pacman.conf
+    regexp: '^#?IgnorePkg +=.*$'
+    line: "IgnorePkg   = {{ pacman_ignore_pkg | join(' ') }}"

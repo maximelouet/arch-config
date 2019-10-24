@@ -8,3 +8,6 @@ pacman_options:
 
 pacman_mirrors_country: "United Kingdom"
 pacman_mirrors_count: 4
+
+pacman_ignore_pkg:
+  - ttf-ms-win10
