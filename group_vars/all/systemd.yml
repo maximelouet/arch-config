@@ -1,5 +1,9 @@
 ---
 
+systemd_journald_settings:
+  - name: MaxRetentionSec
+    value: 1month
+
 systemd_logind_settings:
   - name: HandlePowerKey
     value: suspend

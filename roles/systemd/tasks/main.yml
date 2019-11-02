@@ -1,4 +1,5 @@
 ---
 
+- import_tasks: journald.yml
 - import_tasks: logind.yml
 - import_tasks: timesyncd.yml
