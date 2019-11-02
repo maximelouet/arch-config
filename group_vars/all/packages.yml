@@ -115,6 +115,7 @@ system_packages:
   - terraform
   - thefuck
   - the_silver_searcher # ag
+  - traceroute
   - tree
   - trickle # userspace bandwidth limiter
   - twmn-git
