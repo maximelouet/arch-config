@@ -1,0 +1,19 @@
+---
+
+- name: install necessary network packages
+  become_user: "{{ main_user }}"
+  yay:
+    update_cache: yes
+    name: "{{ item }}"
+    state: present
+  loop: "{{ network_packages }}"
+
+- import_tasks: dns.yml
+
+- name: enable MAC address randomization
+  copy:
+    src: random-mac.conf
+    dest: /etc/NetworkManager/conf.d/random-mac.conf
+  notify: enable and restart NetworkManager
+
+- import_tasks: networks.yml

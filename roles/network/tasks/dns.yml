@@ -1,0 +1,24 @@
+---
+
+- name: copy stubby configuration
+  template:
+    src: stubby.yml
+    dest: /etc/stubby/stubby.yml
+  notify: enable and restart stubby
+
+- name: copy dnsmasq configuration
+  template:
+    src: dnsmasq.conf
+    dest: /etc/dnsmasq.conf
+  notify: enable and restart dnsmasq
+
+- name: prevent NetworkManager from overriding resolv.conf
+  copy:
+    src: dns.conf
+    dest: /etc/NetworkManager/conf.d/dns.conf
+  notify: enable and restart NetworkManager
+
+- name: copy custom resolv.conf
+  copy:
+    src: resolv.conf
+    dest: /etc/resolv.conf

@@ -7,6 +7,7 @@
     mode: '600'
   loop: "{{ wifi_networks_wpa }}"
   notify: restart NetworkManager
+  tags: ['wifi']
 
 - name: template EAP/enterprise wifi networks
   template:
@@ -15,3 +16,4 @@
     mode: '600'
   loop: "{{ wifi_networks_eap }}"
   notify: restart NetworkManager
+  tags: ['wifi']

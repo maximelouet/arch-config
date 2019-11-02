@@ -1,5 +1,4 @@
 ---
 
 - import_tasks: logind.yml
-- import_tasks: resolved.yml
 - import_tasks: timesyncd.yml

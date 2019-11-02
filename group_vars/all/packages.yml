@@ -85,10 +85,6 @@ system_packages:
   - neofetch # hipster swag
   - netcat
   - net-tools
-  - networkmanager
-  - network-manager-applet
-  - networkmanager-fortisslvpn-git # Kent VPN
-  - networkmanager-openvpn
   - nmap
   - nodejs
   - openssh
@@ -175,3 +171,11 @@ font_packages:
 
 boot_packages:
   - systemd-boot-pacman-hook
+
+network_packages:
+  - dnsmasq # Local DNS cache
+  - networkmanager
+  - network-manager-applet
+  - networkmanager-fortisslvpn-git # Kent VPN
+  - networkmanager-openvpn
+  - stubby # DNS-over-TLS resolver
