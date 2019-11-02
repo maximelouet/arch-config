@@ -1,17 +1,10 @@
 ---
 
-- name: template WPA2/PSK wifi networks
+- name: enable MAC address randomization
   template:
-    src: wpa.nmconnection
-    dest: /etc/NetworkManager/system-connections/{{ item.name }}.nmconnection
+    src: random-mac.conf
+    dest: /etc/NetworkManager/conf.d/random-mac.conf
     mode: '600'
-  loop: "{{ wifi_networks_wpa }}"
   notify: restart NetworkManager
 
-- name: template EAP/enterprise wifi networks
-  template:
-    src: eap.nmconnection
-    dest: /etc/NetworkManager/system-connections/{{ item.name }}.nmconnection
-    mode: '600'
-  loop: "{{ wifi_networks_eap }}"
-  notify: restart NetworkManager
+- import_tasks: networks.yml
