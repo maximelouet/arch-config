@@ -3,5 +3,5 @@
 - name: set multi-core compression for makepkg
   lineinfile:
     path: /etc/makepkg.conf
-    regexp: '^COMPRESSXZ=.+'
+    regexp: '^COMPRESSXZ=.*'
     line: 'COMPRESSXZ=(xz -c -z - --threads=4)'
