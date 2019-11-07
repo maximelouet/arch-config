@@ -21,6 +21,7 @@ system_packages:
   - binwalk
   - blih # epitech
   - breeze-hacked-cursor-theme
+  - brightnessctl
   - caprine
   - cava-git
   - checkbashisms
@@ -66,7 +67,6 @@ system_packages:
   - jre-openjdk
   - libinput-gestures
   - libu2f-host # U2F security key communication
-  - light
   - linux-lts
   - linux-lts-headers
   - lxrandr-gtk3
