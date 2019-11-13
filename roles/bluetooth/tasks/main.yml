@@ -19,3 +19,16 @@
   systemd:
     name: bluetooth.service
     enabled: yes
+
+- name: add main user to wheel group
+  user:
+    name: "{{ main_user }}"
+    append: yes
+    groups:
+      - wheel
+
+- name: set blueman polkit rules
+  copy:
+    src: polkit-blueman.rules
+    dest: /etc/polkit-1/rules.d/51-blueman.rules
+    mode: 0644
