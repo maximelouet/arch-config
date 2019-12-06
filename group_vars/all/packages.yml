@@ -162,6 +162,7 @@ print_packages:
 bluetooth_packages:
   - blueman # bluetooth GUI applet
   - bluez # system bluetooth implementation
+  - pulseaudio-modules-bt-git # Sony headset high-res codecs
 
 font_packages:
   - noto-fonts
