@@ -34,4 +34,13 @@
     state: directory
   loop: "{{ user_directories }}"
 
+- name: set default terminal for Nemo
+  shell: "gsettings set org.cinnamon.desktop.default-applications.terminal exec urxvtc"
+
+- name: set command exec argument for Nemo terminal
+  shell: "gsettings set org.cinnamon.desktop.default-applications.terminal exec-arg -e"
+
+- name: set Nemo as default file manager
+  shell: "xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search"
+
 - import_tasks: dotfiles.yml
