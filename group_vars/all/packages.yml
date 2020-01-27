@@ -42,8 +42,10 @@ system_packages:
   - eslint
   - exa
   - exfat-utils
+  - ffmpegthumbnailer # video files previews
   - file-roller # archive manager
   - firefox
+  - freetype2 # font files previews
   - funny-manpages
   - fzf
   - gcc
@@ -69,6 +71,7 @@ system_packages:
   - libu2f-host # U2F security key communication
   - linux-lts
   - linux-lts-headers
+  - lostfiles # find files not owned by any package
   - lxrandr-gtk3
   - maim
   - make
@@ -93,6 +96,7 @@ system_packages:
   - pdfgrep
   - physlock # secure TTY locker
   - playerctl-git
+  - poppler-glib # pdf files previews
   - pulseaudio
   - pulseaudio-bluetooth
   - python
@@ -103,6 +107,7 @@ system_packages:
   - rofi
   - rsync
   - rxvt-unicode
+  - skypeforlinux-stable-bin
   - slack-desktop
   - spotify
   - strace
@@ -118,6 +123,7 @@ system_packages:
   - traceroute
   - tree
   - trickle # userspace bandwidth limiter
+  - tumbler # image files previews
   - twmn-git
   - udiskie
   - udisks2
