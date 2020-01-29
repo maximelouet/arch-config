@@ -1,0 +1,11 @@
+[Unit]
+Description=Saumon laptop stats
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/bash -c "echo -n 'start ' >> /home/saumon/git/laptop-stats/$(hostname) && date --iso-8601=seconds >> /home/saumon/git/laptop-stats/$(hostname)"
+ExecStop=/bin/bash -c "echo -n 'stop ' >> /home/saumon/git/laptop-stats/$(hostname) && date --iso-8601=seconds >> /home/saumon/git/laptop-stats/$(hostname)"
+
+[Install]
+WantedBy=multi-user.target

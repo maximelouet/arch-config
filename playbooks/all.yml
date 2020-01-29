@@ -14,3 +14,4 @@
 - import_playbook: bluetooth.yml
 - import_playbook: pulseaudio.yml
 - import_playbook: print.yml
+- import_playbook: laptop-stats.yml

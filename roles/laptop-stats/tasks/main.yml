@@ -1,0 +1,12 @@
+---
+
+- name: copy systemd service files
+  copy:
+    src: laptop-stats.service
+    dest: /etc/systemd/system/
+
+- name: enable systemd service
+  systemd:
+    name: laptop-stats
+    enabled: yes
+    daemon_reload: yes
