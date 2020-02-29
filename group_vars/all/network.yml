@@ -26,3 +26,6 @@ network_dot_resolvers:
     tls_auth_name: "dns.quad9.net"
 
 network_stubby_port: 53420
+
+network_dispatcher_scripts:
+  - 99-update-i3blocks.sh

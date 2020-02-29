@@ -9,3 +9,9 @@
   loop: "{{ network_packages }}"
 
 - import_tasks: dns.yml
+
+- name: copy NM dispatcher scripts
+  copy:
+    src: "dispatcher.d/{{ item }}"
+    dest: "/etc/NetworkManager/dispatcher.d/{{ item }}"
+  loop: "{{ network_dispatcher_scripts }}"
