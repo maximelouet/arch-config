@@ -3,6 +3,6 @@
 - name: ensure audio device auto switch
   lineinfile:
     path: /etc/pulse/default.pa
-    line: "\nload-module module-switch-on-connect"
+    line: "load-module module-switch-on-connect"
     regexp: "^#? ?load-module module-switch-on-connect$"
     state: present
