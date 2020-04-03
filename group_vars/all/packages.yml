@@ -2,11 +2,11 @@
 
 system_packages:
   - acpi
-  - acpid # acpi events handler.sh (jack, lid toggle...)
+  - acpid  # acpi events handler.sh (jack, lid toggle...)
   - adobe-source-code-pro-fonts
   - android-tools
   - ansible
-  - apache-tools # htpasswd
+  - apache-tools  # htpasswd
   - arc-gtk-theme
   - asciiquarium
   - audacity
@@ -19,7 +19,7 @@ system_packages:
   - bc
   - bind-tools
   - binwalk
-  - blih # epitech
+  - blih  # epitech
   - breeze-hacked-cursor-theme
   - brightnessctl
   - caprine
@@ -28,13 +28,13 @@ system_packages:
   - chromium
   - clipster
   - cmake
-  - code # visual studio code
+  - code  # visual studio code
   - color-picker
   - compton
   - cryptsetup
   - ctags
   - curl
-  - deluge # torrent client
+  - deluge  # torrent client
   - dialog
   - discord
   - docker
@@ -42,36 +42,36 @@ system_packages:
   - eslint
   - exa
   - exfat-utils
-  - ffmpegthumbnailer # video files previews
-  - file-roller # archive manager
+  - ffmpegthumbnailer  # video files previews
+  - file-roller  # archive manager
   - firefox
-  - freetype2 # font files previews
+  - freetype2  # font files previews
   - funny-manpages
   - fzf
   - gcc
   - git
-  - git-open-git # https://github.com/paulirish/git-open
+  - git-open-git  # https://github.com/paulirish/git-open
   - gnu-netcat
   - gnupg
   - gparted
   - gpicview
   - gsimplecal
   - gtk3
-  - gvfs-smb # mount samba shares
-  - hsetroot # xsetroot but works
+  - gvfs-smb  # mount samba shares
+  - hsetroot  # xsetroot but works
   - htop
   - httpie
   - i3blocks
   - i3-gaps
-  - intel-ucode # intel processors microcode updates
+  - intel-ucode  # intel processors microcode updates
   - jdk-openjdk
-  - jq # CLI JSON parser
+  - jq  # CLI JSON parser
   - jre-openjdk
   - libinput-gestures
-  - libu2f-host # U2F security key communication
+  - libu2f-host  # U2F security key communication
   - linux-lts
   - linux-lts-headers
-  - lostfiles # find files not owned by any package
+  - lostfiles  # find files not owned by any package
   - lxrandr-gtk3
   - maim
   - make
@@ -85,23 +85,23 @@ system_packages:
   - ncmpcpp
   - nemo
   - nemo-fileroller
-  - neofetch # hipster swag
+  - neofetch  # hipster swag
   - netcat
   - net-tools
   - nmap
   - nodejs
   - openssh
-  - pacman-contrib # checkupdates and paccache
+  - pacman-contrib  # checkupdates and paccache
   - pavucontrol
   - pdfgrep
-  - physlock # secure TTY locker
+  - physlock  # secure TTY locker
   - playerctl-git
-  - poppler-glib # pdf files previews
+  - poppler-glib  # pdf files previews
   - pulseaudio
   - pulseaudio-bluetooth
   - python
   - python-pip
-  - qalculate-gtk # graphical calculator
+  - qalculate-gtk  # graphical calculator
   - qrencode
   - redshift
   - rofi
@@ -112,18 +112,18 @@ system_packages:
   - spotify
   - strace
   - sublime-text
-  - subversion # epitech eip
+  - subversion  # epitech eip
   - sudo
   - tcpdump
-  - teams-for-linux # microsoft teams, EIP
-  - teensy-loader-cli # ergodox EZ
+  - teams-for-linux  # microsoft teams, EIP
+  - teensy-loader-cli  # ergodox EZ
   - terraform
   - thefuck
-  - the_silver_searcher # ag
+  - the_silver_searcher  # ag
   - traceroute
   - tree
-  - trickle # userspace bandwidth limiter
-  - tumbler # image files previews
+  - trickle  # userspace bandwidth limiter
+  - tumbler  # image files previews
   - twmn-git
   - udiskie
   - udisks2
@@ -154,7 +154,7 @@ system_packages:
   - yarn
   - zip
   - zsh
-  - zsh-completions # yes there is a "s" unlike bash-completion :)
+  - zsh-completions  # yes there is a "s" unlike bash-completion :)
 
 print_packages:
   - cups
@@ -166,24 +166,24 @@ print_packages:
   - hplip
 
 bluetooth_packages:
-  - blueman # bluetooth GUI applet
-  - bluez # system bluetooth implementation
-  - pulseaudio-modules-bt-git # Sony headset high-res codecs
+  - blueman  # bluetooth GUI applet
+  - bluez  # system bluetooth implementation
+  - pulseaudio-modules-bt-git  # Sony headset high-res codecs
 
 font_packages:
   - noto-fonts
   - noto-fonts-cjk
   - noto-fonts-emoji
   - ttf-dejavu
-  - ttf-font-awesome-4 # i3bar icons
+  - ttf-font-awesome-4  # i3bar icons
 
 boot_packages:
   - systemd-boot-pacman-hook
 
 network_packages:
-  - dnsmasq # Local DNS cache
+  - dnsmasq  # Local DNS cache
   - networkmanager
   - network-manager-applet
-  - networkmanager-fortisslvpn-git # Kent VPN
+  - networkmanager-fortisslvpn-git  # Kent VPN
   - networkmanager-openvpn
-  - stubby # DNS-over-TLS resolver
+  - stubby  # DNS-over-TLS resolver

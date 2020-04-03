@@ -26,6 +26,6 @@ boot_loader_entries:
     intel_ucode: true
     default: true
 
-boot_loader_timeout: 1 # seconds
+boot_loader_timeout: 1  # seconds
 
 boot_efi_path: /boot
