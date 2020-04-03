@@ -155,6 +155,7 @@ system_packages:
   - yamllint
   - yarn
   - zip
+  - z.lua
   - zsh
   - zsh-completions  # yes there is a "s" unlike bash-completion :)
 
