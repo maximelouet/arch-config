@@ -186,4 +186,3 @@ network_packages:
   - network-manager-applet
   - networkmanager-fortisslvpn-git  # Kent VPN
   - networkmanager-openvpn
-  - stubby  # DNS-over-TLS resolver

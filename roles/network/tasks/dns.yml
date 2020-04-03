@@ -1,11 +1,5 @@
 ---
 
-- name: copy stubby configuration
-  template:
-    src: stubby.yml
-    dest: /etc/stubby/stubby.yml
-  notify: enable and restart stubby
-
 - name: copy dnsmasq configuration
   template:
     src: dnsmasq.conf
