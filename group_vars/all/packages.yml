@@ -121,6 +121,7 @@ system_packages:
   - thefuck
   - the_silver_searcher  # ag
   - traceroute
+  - trash-cli  # VSCode file deletion support (Electron7)
   - tree
   - trickle  # userspace bandwidth limiter
   - tumbler  # image files previews
@@ -139,6 +140,7 @@ system_packages:
   - wget
   - whois
   - wireless_tools
+  - x11-ssh-askpass  # VSCode SSH authentication
   - xautolock
   - xclip
   - xf86-input-libinput
