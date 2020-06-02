@@ -8,7 +8,7 @@ system_locales:
 preferred_locale: en_US.UTF-8
 preferred_lang: en_US
 
-system_timezone: Europe/London
+system_timezone: Europe/Paris
 
 keyboard_layout: fr
 keyboard_variant: ''
