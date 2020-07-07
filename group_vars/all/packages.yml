@@ -39,6 +39,7 @@ system_packages:
   - discord
   - docker
   - docker-compose
+  - dosfstools  # gparted fat32 support
   - eslint
   - exa
   - exfat-utils
@@ -80,6 +81,7 @@ system_packages:
   - mosh
   - mpc
   - mpd
+  - mtools  # gparted fat32 support
   - mtr
   - ncdu
   - ncmpcpp
