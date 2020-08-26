@@ -21,7 +21,7 @@ I use this repository to store my WiFi passwords. They're encrypted with
 
 ## Acknowledgements
 
-- This repository is partly inspired on
+- This repository is partly inspired by
   [pigmonkey/spark](https://github.com/pigmonkey/spark).
 
 - While I try to keep roles somewhat generic (with extensive use of variables),
