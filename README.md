@@ -11,7 +11,7 @@ Tasks are executed in `roles/`.
 
 These roles use variables from `group_vars/all/`.
 
-Finally, `playbooks/` are used to apply roles. A master playbook, `all.yml`,
+Finally, `playbooks/` are used to apply roles. A global playbook, `all.yml`,
 executes all roles.
 
 ## Encrypted content
