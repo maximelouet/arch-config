@@ -46,12 +46,14 @@ system_packages:
   - ffmpegthumbnailer  # video files previews
   - file-roller  # archive manager
   - firefox
+  - flat-remix
   - freetype2  # font files previews
   - funny-manpages
   - fzf
   - gcc
   - git
   - git-open-git  # https://github.com/paulirish/git-open
+  - gnome-sound-recorder
   - gnu-netcat
   - gnupg
   - gparted
@@ -70,8 +72,10 @@ system_packages:
   - jre-openjdk
   - libinput-gestures
   - libu2f-host  # U2F security key communication
+  - linux-firmware  # linux proprietary drivers
   - linux-lts
   - linux-lts-headers
+  - lite  # graphical text editor
   - lostfiles  # find files not owned by any package
   - lxrandr-gtk3
   - maim
@@ -111,7 +115,7 @@ system_packages:
   - rxvt-unicode
   - skypeforlinux-stable-bin
   - slack-desktop
-  - spotify
+  - spotify  # https://download.spotify.com/debian/pubkey.gpg
   - strace
   - sublime-text
   - subversion  # epitech eip
@@ -119,6 +123,7 @@ system_packages:
   - tcpdump
   - teams-for-linux  # microsoft teams, EIP
   - teensy-loader-cli  # ergodox EZ
+  - telegram
   - terraform
   - thefuck
   - the_silver_searcher  # ag
@@ -168,7 +173,6 @@ print_packages:
   - gsfonts
   - gtk3-print-backends
   - gutenprint
-  - hplip
 
 bluetooth_packages:
   - blueman  # bluetooth GUI applet
@@ -189,5 +193,4 @@ network_packages:
   - dnsmasq  # Local DNS cache
   - networkmanager
   - network-manager-applet
-  - networkmanager-fortisslvpn-git  # Kent VPN
   - networkmanager-openvpn
