@@ -1,0 +1,15 @@
+---
+
+- name: copy X11 keyboard, mouse and touchpad configuration
+  copy:
+    src: "{{ item }}"
+    dest: "/etc/X11/xorg.conf.d/{{ item }}"
+  loop:
+    - 30-keyboard-ergodox.conf
+    - 80-mouse-mx.conf
+    - 80-touchpad.conf
+
+- name: set keyboard repeat interval in xserverrc
+  copy:
+    src: xserverrc
+    dest: /etc/X11/xinit/xserverrc

@@ -9,6 +9,7 @@
 - import_playbook: packages.yml
 - import_playbook: user.yml
 - import_playbook: fonts.yml
+- import_playbook: graphical.yml
 - import_playbook: network.yml
 - import_playbook: firewall.yml
 - import_playbook: bluetooth.yml
