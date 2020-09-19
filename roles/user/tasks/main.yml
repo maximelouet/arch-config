@@ -9,11 +9,11 @@
     append: yes
 
 - name: add main user to sudoers
-  lineinfile:
-    path: /etc/sudoers
-    line: '{{ main_user }} ALL=(ALL) ALL'
-    insertafter: '^root ALL=.*'
-    validate: 'visudo -cf %s'
+  copy:
+    dest: /etc/sudoers.d/saumon-user
+    content: |
+      {{ main_user }} ALL=(ALL) ALL
+    validate: 'visudo -csf %s'
 
 - name: generate SSH key
   become_user: "{{ main_user }}"
