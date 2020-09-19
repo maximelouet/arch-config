@@ -6,9 +6,11 @@
     repo: "{{ user_dotfiles_repo }}"
     dest: "{{ user_dotfiles_directory }}"
     accept_hostkey: yes
+  ignore_errors: yes
 
 - name: install dotfiles with dotbot
   become_user: "{{ main_user }}"
   command: "./install"
   args:
     chdir: "{{ user_dotfiles_directory }}"
+  ignore_errors: yes
