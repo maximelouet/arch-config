@@ -19,7 +19,6 @@ system_packages:
   - bc
   - bind-tools
   - binwalk
-  - blih  # epitech
   - breeze-hacked-cursor-theme
   - brightnessctl
   - caprine
@@ -34,7 +33,6 @@ system_packages:
   - cryptsetup
   - ctags
   - curl
-  - deluge  # torrent client
   - dialog
   - discord
   - docker
@@ -80,7 +78,6 @@ system_packages:
   - lxrandr-gtk3
   - maim
   - make
-  - minecraft-launcher
   - mlocate
   - mosh
   - mpc
@@ -114,17 +111,13 @@ system_packages:
   - rofi
   - rsync
   - rxvt-unicode
-  - skypeforlinux-stable-bin
   - slack-desktop
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
   - strace
-  - sublime-text
   - subversion  # epitech eip
   - sudo
   - tcpdump
-  - teams-for-linux  # microsoft teams, EIP
-  - teensy-loader-cli  # ergodox EZ
-  - telegram
+  - telegram-desktop
   - terraform
   - thefuck
   - the_silver_searcher  # ag
@@ -144,7 +137,6 @@ system_packages:
   - virtualbox
   - virtualbox-host-dkms
   - vlc
-  - vmware-workstation
   - wget
   - whois
   - wireless_tools

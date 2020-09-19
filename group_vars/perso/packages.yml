@@ -1,0 +1,10 @@
+---
+
+additional_packages:
+  - blih  # epitech
+  - deluge  # torrent client
+  - minecraft-launcher
+  - skypeforlinux-stable-bin
+  - teams  # microsoft teams, EIP
+  - teensy-loader-cli  # ergodox EZ
+  - vmware-workstation
