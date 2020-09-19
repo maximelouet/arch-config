@@ -13,3 +13,5 @@
   copy:
     src: xserverrc
     dest: /etc/X11/xinit/xserverrc
+
+- import_tasks: brightness-sudoers.yml

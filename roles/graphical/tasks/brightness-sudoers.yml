@@ -1,0 +1,8 @@
+---
+
+- name: allow passwordless sudo brightnessctl for i3 script
+  copy:
+    dest: /etc/sudoers.d/saumon-brightnessctl
+    content: |
+      {{ main_user }} ALL=(ALL) NOPASSWD: /usr/bin/brightnessctl
+    validate: 'visudo -csf %s'
