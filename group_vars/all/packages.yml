@@ -45,7 +45,7 @@ system_packages:
   - exfat-utils
   - ffmpegthumbnailer  # video files previews
   - file-roller  # archive manager
-  - firefox
+  - firefox-developer-edition
   - flat-remix
   - freetype2  # font files previews
   - funny-manpages
@@ -106,6 +106,7 @@ system_packages:
   - pulseaudio
   - pulseaudio-bluetooth
   - python
+  - python2
   - python-pip
   - qalculate-gtk  # graphical calculator
   - qrencode
