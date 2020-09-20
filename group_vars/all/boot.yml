@@ -6,7 +6,7 @@ boot_loader_entries:
     linux: /vmlinuz-linux
     initrd: /initramfs-linux.img
     options: >-
-      cryptdevice=UUID=385b759e-e8c1-4cce-99b4-a23bd167956d:poissonnerie
+      cryptdevice=UUID={{ root_partition_uuid }}:{{ system_hostname }}
       root=/dev/mapper/vg0-root
       rw
       nowatchdog
@@ -18,7 +18,7 @@ boot_loader_entries:
     linux: /vmlinuz-linux-lts
     initrd: /initramfs-linux-lts.img
     options: >-
-      cryptdevice=UUID=385b759e-e8c1-4cce-99b4-a23bd167956d:poissonnerie
+      cryptdevice=UUID={{ root_partition_uuid }}:{{ system_hostname }}
       root=/dev/mapper/vg0-root
       rw
       nowatchdog

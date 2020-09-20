@@ -1,2 +1,2 @@
 [pro]
-saumon-gandixps ansible_host=127.0.0.1 ansible_connection=local ansible_become=yes
+saumon-gandixps ansible_host=127.0.0.1 ansible_connection=local ansible_become=yes root_partition_uuid="153c2a12-eab8-46c9-b7bf-9b6135829e84"

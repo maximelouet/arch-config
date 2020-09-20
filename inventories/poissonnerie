@@ -1,2 +1,2 @@
 [perso]
-poissonnerie ansible_host=127.0.0.1 ansible_connection=local ansible_become=yes
+poissonnerie ansible_host=127.0.0.1 ansible_connection=local ansible_become=yes root_partition_uuid="385b759e-e8c1-4cce-99b4-a23bd167956d"
