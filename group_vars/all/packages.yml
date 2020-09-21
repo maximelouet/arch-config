@@ -56,6 +56,7 @@ system_packages:
   - gnupg
   - gparted
   - gpicview
+  - grcat  # generic colouriser
   - gsimplecal
   - gtk3
   - gvfs-smb  # mount samba shares
