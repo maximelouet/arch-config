@@ -120,6 +120,7 @@ system_packages:
   - tcpdump
   - telegram-desktop
   - terraform
+  - testssl.sh
   - thefuck
   - the_silver_searcher  # ag
   - traceroute
