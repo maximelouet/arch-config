@@ -154,6 +154,7 @@ system_packages:
   - xorg-xprop
   - xorg-xrandr
   - xorg-xrdb
+  - xorg-xwininfo  # i3-get-window-criteria.sh
   - yamllint
   - yarn
   - zip
