@@ -5,16 +5,17 @@ main_user: saumon
 main_user_key_type: ed25519
 
 user_directories:
+  - archive
   - backup
+  - cancer
   - downloads
   - external
-  - ezra
   - games
   - git
   - grepimmo
   - images
-  - kent
   - music
+  - phone
   - scripts
   - software
   - tek
