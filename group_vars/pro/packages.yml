@@ -1,0 +1,5 @@
+---
+
+additional_packages:
+  - ipmitool
+  - ripe-atlas-tools

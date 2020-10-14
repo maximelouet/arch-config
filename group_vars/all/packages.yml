@@ -17,7 +17,7 @@ system_packages:
   - bash
   - bash-completion
   - bc
-  - bind-tools
+  - bind
   - binwalk
   - breeze-hacked-cursor-theme
   - brightnessctl
@@ -26,6 +26,7 @@ system_packages:
   - checkbashisms
   - chromium
   - clipster
+  - clusterssh
   - cmake
   - code  # visual studio code
   - color-picker
@@ -94,6 +95,7 @@ system_packages:
   - net-tools
   - nmap
   - nodejs
+  - npm
   - openssh
   - pacman-contrib  # checkupdates and paccache
   - pavucontrol
