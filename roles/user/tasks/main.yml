@@ -5,7 +5,7 @@
     name: "{{ main_user }}"
     shell: /bin/zsh
     create_home: yes
-    groups: ["input"]
+    groups: "{{ user_groups }}"
     append: yes
 
 - name: add main user to sudoers
