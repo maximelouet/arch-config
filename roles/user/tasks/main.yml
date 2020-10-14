@@ -15,12 +15,19 @@
       {{ main_user }} ALL=(ALL) ALL
     validate: 'visudo -csf %s'
 
+- name: check SSH key presence
+  become_user: "{{ main_user }}"
+  stat:
+    path: ~/.ssh/id_{{ main_user_key_type }}
+  register: ssh_key_file
+
 - name: generate SSH key
   become_user: "{{ main_user }}"
   openssh_keypair:
     path: ~/.ssh/id_{{ main_user_key_type }}
     type: "{{ main_user_key_type }}"
     comment: "{{ main_user }}-{{ ansible_date_time.year }}-{{ ansible_date_time.month }}@{{ inventory_hostname }}"
+  when: not ssh_key_file.stat.exists
 
 - name: init GPG
   become_user: "{{ main_user }}"
