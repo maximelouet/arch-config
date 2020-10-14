@@ -1,5 +1,11 @@
 ---
 
+# There is a user-specific configuration in ~/.config/pulse/default.pa, in
+# which we can extend the global config. However we cannot make
+# ~/.config/pulse/ a symlink
+# (https://gitlab.freedesktop.org/pulseaudio/pulseaudio/-/issues/624), so I
+# cannot manage it with my dotfiles :)
+
 - name: ensure audio device auto switch
   lineinfile:
     path: /etc/pulse/default.pa
