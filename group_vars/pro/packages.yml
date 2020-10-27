@@ -2,4 +2,6 @@
 
 additional_packages:
   - ipmitool
+  - ipython
+  - ipython2
   - ripe-atlas-tools
