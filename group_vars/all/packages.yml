@@ -64,6 +64,7 @@ system_packages:
   - hsetroot  # xsetroot but works
   - htop
   - httpie
+  - informant  # archlinux news pacman hook
   - i3blocks
   - i3-gaps
   - intel-ucode  # intel processors microcode updates
@@ -125,6 +126,8 @@ system_packages:
   - testssl.sh
   - thefuck
   - the_silver_searcher  # ag
+  - tor
+  - torbrowser-launcher
   - traceroute
   - trash-cli  # VSCode file deletion support (Electron7)
   - tree
