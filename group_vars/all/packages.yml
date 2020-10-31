@@ -16,6 +16,7 @@ system_packages:
   - base
   - bash
   - bash-completion
+  - bat  # cat with syntax highlighting
   - bc
   - bind
   - binwalk
