@@ -118,6 +118,7 @@ system_packages:
   - rsync
   - rxvt-unicode
   - slack-desktop
+  - sox  # play command
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
   - strace
   - subversion  # epitech eip
