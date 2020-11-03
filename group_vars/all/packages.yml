@@ -37,6 +37,7 @@ system_packages:
   - curl
   - dialog
   - discord
+  - discord-canary
   - docker
   - docker-compose
   - dosfstools  # gparted fat32 support
