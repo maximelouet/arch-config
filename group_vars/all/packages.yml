@@ -24,6 +24,7 @@ system_packages:
   - brightnessctl
   - caprine
   - cava-git
+  - cheat-bin
   - checkbashisms
   - chromium
   - clipster
