@@ -97,6 +97,7 @@ system_packages:
   - neofetch  # hipster swag
   - netcat
   - net-tools
+  - nfs-utils
   - nmap
   - nodejs
   - npm
