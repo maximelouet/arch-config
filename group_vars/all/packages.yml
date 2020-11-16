@@ -135,6 +135,7 @@ system_packages:
   - the_silver_searcher  # ag
   - tor
   - torbrowser-launcher
+  - totp-cli
   - traceroute
   - trash-cli  # VSCode file deletion support (Electron7)
   - tree
