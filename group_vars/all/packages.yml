@@ -118,6 +118,7 @@ system_packages:
   - rclone
   - redshift
   - rofi
+  - rofimoji
   - rsync
   - rxvt-unicode
   - slack-desktop
