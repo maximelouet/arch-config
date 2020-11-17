@@ -107,6 +107,7 @@ system_packages:
   - pdfgrep
   - physlock  # secure TTY locker
   - playerctl-git
+  - pngquant
   - poppler-glib  # pdf files previews
   - pulseaudio
   - pulseaudio-bluetooth
