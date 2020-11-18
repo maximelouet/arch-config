@@ -67,9 +67,10 @@ system_packages:
   - hsetroot  # xsetroot but works
   - htop
   - httpie
-  - informant  # archlinux news pacman hook
   - i3blocks
   - i3-gaps
+  - icedtea-web  # open java jnlp files and other weird 90's things
+  - informant  # archlinux news pacman hook
   - intel-ucode  # intel processors microcode updates
   - jdk-openjdk
   - jq  # CLI JSON parser
