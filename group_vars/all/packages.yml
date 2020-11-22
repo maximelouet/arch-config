@@ -8,6 +8,7 @@ system_packages:
   - ansible
   - apache-tools  # htpasswd
   - arc-gtk-theme
+  - aria2
   - asciiquarium
   - audacity
   - autorandr
