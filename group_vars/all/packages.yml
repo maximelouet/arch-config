@@ -107,6 +107,8 @@ system_packages:
   - pacman-contrib  # checkupdates and paccache
   - pavucontrol
   - pdfgrep
+  - perl-anyevent-i3
+  - perl-json-xs
   - physlock  # secure TTY locker
   - playerctl-git
   - pngquant
