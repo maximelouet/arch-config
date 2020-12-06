@@ -127,6 +127,7 @@ system_packages:
   - rxvt-unicode
   - slack-desktop
   - sox  # play command
+  - spek  # acoustic spectrum analyser
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
   - strace
   - subversion  # epitech eip
