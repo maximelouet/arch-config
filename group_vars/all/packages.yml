@@ -43,6 +43,7 @@ system_packages:
   - docker
   - docker-compose
   - dosfstools  # gparted fat32 support
+  - dunst
   - eslint
   - exa
   - exfat-utils
@@ -76,6 +77,7 @@ system_packages:
   - jdk-openjdk
   - jq  # CLI JSON parser
   - jre-openjdk
+  - kitty
   - libinput-gestures
   - libu2f-host  # U2F security key communication
   - linux-firmware  # linux proprietary drivers
@@ -146,7 +148,6 @@ system_packages:
   - tree
   - trickle  # userspace bandwidth limiter
   - tumbler  # image files previews
-  - twmn-git
   - udiskie
   - udisks2
   - unrar
