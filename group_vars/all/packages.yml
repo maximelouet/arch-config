@@ -48,7 +48,7 @@ system_packages:
   - exfat-utils
   - ffmpegthumbnailer  # video files previews
   - file-roller  # archive manager
-  - firefox-developer-edition
+  - firefox
   - flat-remix
   - freetype2  # font files previews
   - funny-manpages
