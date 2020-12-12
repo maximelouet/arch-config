@@ -158,6 +158,7 @@ system_packages:
   - virtualbox
   - virtualbox-host-dkms
   - vlc
+  - weechat
   - wget
   - whois
   - wireless_tools
