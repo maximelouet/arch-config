@@ -140,6 +140,7 @@ system_packages:
   - testssl.sh
   - thefuck
   - the_silver_searcher  # ag
+  - tmux
   - tor
   - torbrowser-launcher
   - totp-cli
