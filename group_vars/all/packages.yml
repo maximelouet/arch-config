@@ -92,6 +92,7 @@ system_packages:
   - mosh
   - mpc
   - mpd
+  - mpdscribble
   - mtools  # gparted fat32 support
   - mtr
   - ncdu
