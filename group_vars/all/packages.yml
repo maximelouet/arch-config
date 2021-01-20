@@ -116,7 +116,6 @@ system_packages:
   - playerctl-git
   - poppler-glib  # pdf files previews
   - pulseaudio
-  - pulseaudio-bluetooth
   - python
   - python2
   - python-pip
@@ -195,7 +194,7 @@ print_packages:
 bluetooth_packages:
   - blueman  # bluetooth GUI applet
   - bluez  # system bluetooth implementation
-  - pulseaudio-modules-bt-git  # Sony headset high-res codecs
+  - pulseaudio-bluetooth
 
 font_packages:
   - noto-fonts
