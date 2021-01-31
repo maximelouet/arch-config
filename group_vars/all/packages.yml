@@ -88,6 +88,7 @@ system_packages:
   - lxrandr-gtk3
   - maim
   - make
+  - mediainfo
   - mlocate
   - mosh
   - mpc
