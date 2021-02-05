@@ -15,3 +15,6 @@
     src: "dispatcher.d/{{ item }}"
     dest: "/etc/NetworkManager/dispatcher.d/{{ item }}"
   loop: "{{ network_dispatcher_scripts }}"
+
+- import_tasks: networks.yml
+  tags: ['wifi']
