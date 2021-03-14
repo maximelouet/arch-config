@@ -95,6 +95,7 @@ system_packages:
   - mpc
   - mpd
   - mpdscribble
+  - mpv
   - mtools  # gparted fat32 support
   - mtr
   - ncdu
