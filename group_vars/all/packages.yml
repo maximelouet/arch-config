@@ -72,6 +72,7 @@ system_packages:
   - i3blocks
   - i3-gaps
   - icedtea-web  # open java jnlp files and other weird 90's things
+  - imv  # image viewer
   - informant  # archlinux news pacman hook
   - intel-ucode  # intel processors microcode updates
   - jdk-openjdk
