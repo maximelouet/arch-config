@@ -53,6 +53,7 @@ system_packages:
   - flat-remix
   - freetype2  # font files previews
   - funny-manpages
+  - fwupd  # firmware upgrade tool
   - fzf
   - gcc
   - git
