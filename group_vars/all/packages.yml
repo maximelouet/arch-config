@@ -47,6 +47,7 @@ system_packages:
   - eslint
   - exa
   - exfat-utils
+  - fd  # find alternative
   - ffmpegthumbnailer  # video files previews
   - file-roller  # archive manager
   - firefox
@@ -128,6 +129,7 @@ system_packages:
   - qrencode
   - rclone
   - redshift
+  - ripgrep  # rg, ag alternative
   - rofi
   - rofimoji
   - rsync
