@@ -12,7 +12,6 @@ user_directories:
   - external
   - games
   - git
-  - grepimmo
   - images
   - music
   - phone
@@ -23,6 +22,7 @@ user_directories:
   - videos
   - web
   - work
+  - .local/share/Last.fm  # Clementine scrobbler needs this directory to work :)
 
 user_groups:
   - docker
