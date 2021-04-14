@@ -21,6 +21,7 @@ system_packages:
   - bc
   - bind
   - binwalk
+  - bitwarden-cli-bin
   - breeze-hacked-cursor-theme
   - brightnessctl
   - caprine
@@ -80,6 +81,7 @@ system_packages:
   - jdk-openjdk
   - jq  # CLI JSON parser
   - jre-openjdk
+  - kanshi  # wayland monitor autoconfigurator (autorandr)
   - kitty
   - libinput-gestures
   - libu2f-host  # U2F security key communication
@@ -147,6 +149,7 @@ system_packages:
   - testssl.sh
   - thefuck
   - the_silver_searcher  # ag
+  - tlp  # laptop power management
   - tmux
   - tor
   - torbrowser-launcher
