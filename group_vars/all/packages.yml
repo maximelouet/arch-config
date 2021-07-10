@@ -39,12 +39,14 @@ system_packages:
   - ctags
   - curl
   - dialog
+  - diff-so-fancy
   - discord
   - discord-canary
   - docker
   - docker-compose
   - dosfstools  # gparted fat32 support
   - dunst
+  - ed  # Ed is the standard text editor.
   - eslint
   - exa
   - exfat-utils
