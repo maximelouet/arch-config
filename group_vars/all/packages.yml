@@ -137,6 +137,7 @@ system_packages:
   - rofimoji
   - rsync
   - rxvt-unicode
+  - sieve-connect
   - slack-desktop
   - snore  # sleep with feedback
   - sox  # play command
