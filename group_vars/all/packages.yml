@@ -7,10 +7,10 @@ system_packages:
   - android-tools
   - ansible
   - apache-tools  # htpasswd
+  - arandr
   - arc-gtk-theme
   - aria2
   - asciiquarium
-  - audacity  # TODO: find an alternative
   - autorandr
   - aws-cli
   - baobab
@@ -21,7 +21,7 @@ system_packages:
   - bc
   - bind
   - binwalk
-  - bitwarden-cli-bin
+  - bitwarden-cli
   - breeze-hacked-cursor-theme
   - brightnessctl
   - caprine
@@ -54,11 +54,13 @@ system_packages:
   - file-roller  # archive manager
   - firefox
   - flat-remix
+  - fping
   - freetype2  # font files previews
   - funny-manpages
   - fwupd  # firmware upgrade tool
   - fzf
   - gcc
+  - gimp
   - git
   - git-open-git  # https://github.com/paulirish/git-open
   - gnome-sound-recorder
@@ -80,11 +82,13 @@ system_packages:
   - informant  # archlinux news pacman hook
   - intel-ucode  # intel processors microcode updates
   - jdk-openjdk
+  - jpegoptim
   - jq  # CLI JSON parser
   - jre-openjdk
   - kanshi  # wayland monitor autoconfigurator (autorandr)
   - kitty
   - libinput-gestures
+  - libreofice-still
   - libu2f-host  # U2F security key communication
   - linux-firmware  # linux proprietary drivers
   - linux-lts
@@ -116,7 +120,9 @@ system_packages:
   - nodejs
   - npm
   - openssh
+  - p7zip
   - pacman-contrib  # checkupdates and paccache
+  - pass  # for TOTP
   - pavucontrol
   - pdfgrep
   - perl-anyevent-i3
@@ -137,11 +143,11 @@ system_packages:
   - rofimoji
   - rsync
   - rxvt-unicode
+  - shellcheck
   - sieve-connect
   - slack-desktop
   - snore  # sleep with feedback
   - sox  # play command
-  - spek  # acoustic spectrum analyser
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
   - strace
   - sudo
@@ -187,6 +193,7 @@ system_packages:
   - xorg-xwininfo  # i3-get-window-criteria.sh
   - yamllint
   - yarn
+  - zenity  # for custom UI dialogs
   - zip
   - zsh
   - zsh-completions  # yes there is a "s" unlike bash-completion :)
@@ -202,6 +209,7 @@ print_packages:
 bluetooth_packages:
   - blueman  # bluetooth GUI applet
   - bluez  # system bluetooth implementation
+  - bluez-utils
   - pulseaudio-bluetooth
 
 font_packages:

@@ -1,8 +1,6 @@
 ---
 
 additional_packages:
-  - blih  # epitech
   - deluge  # torrent client
+  - easytag
   - minecraft-launcher
-  - teams  # microsoft teams, EIP
-  - teensy-loader-cli  # ergodox EZ
