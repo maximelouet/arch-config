@@ -34,6 +34,7 @@ system_packages:
   - code  # visual studio code
   - color-picker
   - compton
+  - convmv
   - cryptsetup
   - ctags
   - curl
@@ -186,6 +187,7 @@ system_packages:
   - xorg-setxkbmap
   - xorg-xev
   - xorg-xinit
+  - xorg-xinput
   - xorg-xkill
   - xorg-xprop
   - xorg-xrandr
