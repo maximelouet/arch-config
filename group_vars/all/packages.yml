@@ -38,6 +38,7 @@ system_packages:
   - cryptsetup
   - ctags
   - curl
+  - ddcutil
   - dialog
   - diff-so-fancy
   - discord
