@@ -196,6 +196,7 @@ system_packages:
   - xorg-xwininfo  # i3-get-window-criteria.sh
   - yamllint
   - yarn
+  - youtube-dl
   - zenity  # for custom UI dialogs
   - zip
   - zsh
