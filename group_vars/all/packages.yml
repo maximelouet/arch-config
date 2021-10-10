@@ -94,7 +94,7 @@ system_packages:
   - linux-firmware  # linux proprietary drivers
   - linux-lts
   - linux-lts-headers
-  - lite  # graphical text editor
+  - lite-xl  # graphical text editor
   - lostfiles  # find files not owned by any package
   - lxrandr-gtk3
   - maim
