@@ -147,6 +147,7 @@ system_packages:
   - rxvt-unicode
   - shellcheck
   - sieve-connect
+  - simplescreenrecorder
   - slack-desktop
   - snore  # sleep with feedback
   - sox  # play command
