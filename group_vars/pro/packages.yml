@@ -1,7 +1,9 @@
 ---
 
 additional_packages:
+  - freerdp
   - ipmitool
   - ipython
   - ipython2
+  - remmina
   - ripe-atlas-tools
