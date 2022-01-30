@@ -128,6 +128,7 @@ system_packages:
   - pavucontrol
   - pdfgrep
   - perl-anyevent-i3
+  - perl-image-exiftool
   - perl-json-xs
   - physlock  # secure TTY locker
   - playerctl-git
