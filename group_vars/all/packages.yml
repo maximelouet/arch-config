@@ -97,6 +97,7 @@ system_packages:
   - linux-lts-headers
   - lite-xl  # graphical text editor
   - lostfiles  # find files not owned by any package
+  - lsof
   - lxrandr-gtk3
   - maim
   - make
