@@ -42,7 +42,8 @@ system_packages:
   - dialog
   - diff-so-fancy
   - discord
-  - discord-canary  # for when it's my "lucky day" and discord stable won't start
+  - dmidecode
+  - dnscontrol-bin
   - docker
   - docker-compose
   - dosfstools  # gparted fat32 support
@@ -89,6 +90,7 @@ system_packages:
   - jre-openjdk
   - kanshi  # wayland monitor autoconfigurator (autorandr)
   - kitty
+  - libappindicator-gtk3
   - libinput-gestures
   - libreofice-still
   - libu2f-host  # U2F security key communication
@@ -132,6 +134,8 @@ system_packages:
   - perl-image-exiftool
   - perl-json-xs
   - physlock  # secure TTY locker
+  - pipewire
+  - pipewire-pulse
   - playerctl-git
   - poppler-glib  # pdf files previews
   - pulseaudio
@@ -149,9 +153,10 @@ system_packages:
   - rxvt-unicode
   - shellcheck
   - sieve-connect
+  - signalbackup-tools-git
   - simplescreenrecorder
   - slack-desktop
-  - snore  # sleep with feedback
+  - snore-git  # sleep with feedback
   - sox  # play command
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
   - strace
@@ -183,6 +188,7 @@ system_packages:
   - wget
   - whois
   - wireless_tools
+  - wireplumber
   - x11-ssh-askpass  # VSCode SSH authentication
   - xautolock
   - xclip
