@@ -78,6 +78,7 @@ system_packages:
   - hsetroot  # xsetroot but works
   - htop
   - httpie
+  - hugin  # photo tools
   - i3blocks
   - i3-gaps
   - icedtea-web  # open java jnlp files and other weird 90's things
@@ -94,6 +95,8 @@ system_packages:
   - libinput-gestures
   - libreofice-still
   - libu2f-host  # U2F security key communication
+  - libva-utils
+  - libva-vdpau-driver
   - linux-firmware  # linux proprietary drivers
   - linux-lts
   - linux-lts-headers
@@ -117,12 +120,16 @@ system_packages:
   - ncmpcpp
   - nemo
   - nemo-fileroller
+  - nemo-mediainfo-tab
+  - nemo-python
   - neofetch  # hipster swag
   - netcat
   - net-tools
+  - nextcloud-client
   - nfs-utils
   - nmap
   - nodejs
+  - nomacs
   - npm
   - openssh
   - p7zip
@@ -139,6 +146,7 @@ system_packages:
   - playerctl-git
   - poppler-glib  # pdf files previews
   - pulseaudio
+  - pv
   - python
   - python2
   - python-pip
@@ -206,6 +214,7 @@ system_packages:
   - yamllint
   - yarn
   - youtube-dl
+  - yq  # yaml helper
   - zenity  # for custom UI dialogs
   - zip
   - zsh
