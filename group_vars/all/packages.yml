@@ -84,6 +84,7 @@ system_packages:
   - icedtea-web  # open java jnlp files and other weird 90's things
   - imv  # image viewer
   - informant  # archlinux news pacman hook
+  - inkscape
   - intel-ucode  # intel processors microcode updates
   - jdk-openjdk
   - jpegoptim
@@ -131,6 +132,7 @@ system_packages:
   - nodejs
   - nomacs
   - npm
+  - ntfs-3g
   - openssh
   - p7zip
   - pacman-contrib  # checkupdates and paccache
@@ -172,6 +174,7 @@ system_packages:
   - tcpdump
   - telegram-desktop
   - terraform
+  - testdisk
   - testssl.sh
   - thefuck
   - the_silver_searcher  # ag
@@ -190,6 +193,7 @@ system_packages:
   - unrar
   - unzip
   - urxvt-resize-font-git
+  - usbutils
   - vim
   - vlc
   - weechat
@@ -197,6 +201,7 @@ system_packages:
   - whois
   - wireless_tools
   - wireplumber
+  - wmctrl
   - x11-ssh-askpass  # VSCode SSH authentication
   - xautolock
   - xclip
