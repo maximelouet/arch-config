@@ -41,8 +41,8 @@
     state: directory
   loop: "{{ user_directories }}"
 
-- name: set default terminal for Nemo
-  shell: "gsettings set org.cinnamon.desktop.default-applications.terminal exec urxvtc"
+- name: set default terminal for some graphical apps
+  shell: "gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty"
 
 - name: set command exec argument for Nemo terminal
   shell: "gsettings set org.cinnamon.desktop.default-applications.terminal exec-arg -e"
